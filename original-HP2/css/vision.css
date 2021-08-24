@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+.vision ul li {
+  position: relative;
+  margin: 200px auto;
+  width: 85%;
+}
+.vision1 .bg-img img {
+  position: absolute;
+  height: 400px;
+  width: 45%;
+  object-fit: cover;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.vision2 .bg-img img {
+  position: absolute;
+  height: 280px;
+  width: 45%;
+  object-fit: cover;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.vision-item .vision-txt {
+  width: 50%;
+  text-align: center;
+}
+
+.vision-item .vision-txt .item-ttl {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.vision1 .vision-txt .item-ttl::before {
+  content: "01";
+  position: absolute;
+  top: -70px;
+  color: #00621b;
+  font-size: 40px;
+}
+
+.vision2 .vision-txt .item-ttl::before {
+  content: "02";
+  position: absolute;
+  top: -70px;
+  color: #00621b;
+  font-size: 40px;
+}
+
+.vision3 .vision-txt .item-ttl::before {
+  content: "03";
+  position: absolute;
+  top: -70px;
+  color: #00621b;
+  font-size: 40px;
+}
+
+.vision2 .vision-txt {
+  margin-left: 50%;
+}
+
+.vision3 .bg-img img {
+  position: absolute;
+  object-fit: cover;
+  height: 300px;
+  width: 45%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 900px) {
+  .vision-item .vision-txt {
+    width: 100%;
+  }
+
+  .vision2 .vision-txt {
+    margin-left: 0;
+  }
+
+  .vision-txt .item-ttl::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .vision-item .vision-txt .item-ttl {
+    margin-bottom: 250px;
+  }
+
+  .vision-item .bg-img img {
+    height: 200px;
+    width: 85%;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .vision ul li {
+    margin: 100px auto;
+    width: 90%;
+  }
+
+  .vision-item .vision-txt .item-ttl {
+    font-size: 18px;
+    margin-bottom: 200px;
+  }
+
+  .vision1 .vision-txt .item-ttl::before,
+  .vision2 .vision-txt .item-ttl::before,
+  .vision3 .vision-txt .item-ttl::before {
+    font-size: 35px;
+    top: -50px;
+  }
+
+  .vision-item .bg-img img {
+    height: 160px;
+    width: 95%;
+    top: 80px;
+  }
+
+  .vision-item .vision-txt .item-txt {
+    font-size: 14px;
+  }
+}

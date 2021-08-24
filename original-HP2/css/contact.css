@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+.top {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.top img {
+  width: 50%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.top .top-txt {
+  position: absolute;
+  width: 70%;
+  height: 451px;
+  right: 0;
+  background-color: #cfdad2;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  line-height: 40px;
+}
+
+.top .top-txt p {
+  padding: 20% 5% 5% 18%;
+  font-weight: 600;
+}
+
+.form {
+  width: 80%;
+  margin: 150px auto;
+}
+
+.form .section-ttl {
+  font-size: 30px;
+  font-weight: 900;
+  padding: 20px 0 60px 20px;
+}
+
+.form .section-ttl::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 40px;
+  background-color: #00621b;
+  transform: translate(-20px, 10px);
+}
+
+.form form div {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.form form div label {
+  font-size: 20px;
+  width: 300px;
+  display: block;
+  position: relative;
+  font-weight: 700;
+}
+
+.form form div label::after {
+  content: "必須";
+  font-size: 15px;
+  color: #00621b;
+  border: solid 1px #00621b;
+  position: absolute;
+  top: 5px;
+  left: 250px;
+  padding: 0 5px;
+}
+
+.form form div select {
+  width: 50.5%;
+  height: 60px;
+}
+
+.form form div input {
+  width: 50%;
+  height: 50px;
+}
+
+.form form div textarea {
+  width: 50%;
+}
+
+.form form button {
+  width: 200px;
+  height: 50px;
+  margin: 40px auto;
+  text-align: center;
+  display: block;
+  background-color: #00621b;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 0.3em;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 900px) {
+  .top .top-txt {
+    width: 80%;
+    font-size: 15px;
+    height: 351px;
+  }
+
+  .top img {
+    height: 350px;
+    width: 37%;
+  }
+
+  .form {
+    margin-top: 100px;
+  }
+
+  .form form div label::after {
+    left: 200px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .top {
+    display: block;
+  }
+
+  .top img {
+    width: 100%;
+    height: 180px;
+    display: block;
+  }
+
+  .top .top-txt {
+    width: 100%;
+    background-color: #cfdad28f;
+    clip-path: unset;
+    line-height: unset;
+    height: fit-content;
+    padding: 10px;
+    right: unset;
+  }
+
+  .top .top-txt p {
+    font-size: 12px;
+    padding: unset;
+  }
+
+  .form {
+    margin-top: 130px;
+    margin-bottom: 100px;
+    width: 85%;
+  }
+
+  .form .section-ttl {
+    font-size: 20px;
+    margin-top: 50px;
+    position: relative;
+    padding-left: 10px;
+    padding-bottom: 30px;
+  }
+
+  .form .section-ttl::before {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    height: 30px;
+    width: 3px;
+  }
+
+  .form form div {
+    display: block;
+  }
+
+  .form form div label {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  .form form div select,
+  .form form div textarea {
+    width: 100%;
+  }
+
+  .form form div input {
+    width: 99.5%;
+  }
+
+  .form form div label::after {
+    left: 160px;
+    font-size: 13px;
+    top: 6px;
+  }
+
+  .form form button {
+    margin: 20px auto;
+  }
+}

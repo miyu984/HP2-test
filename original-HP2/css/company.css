@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+.company {
+  margin: 150px auto 100px;
+  width: 80%;
+}
+
+.company ul li {
+  display: flex;
+  padding: 40px 0;
+  border-bottom: solid 1px #003c11;
+}
+
+.company ul li:nth-of-type(1) {
+  border-top: solid 1px #003c11;
+}
+
+.company ul li p.list-ttl {
+  width: 330px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.company ul li p.list-content {
+  font-size: 20px;
+}
+
+.map {
+  width: 80%;
+  margin: 150px auto;
+}
+
+.map .section-ttl {
+  font-size: 30px;
+  font-weight: 900;
+  padding: 20px 0 40px 20px;
+}
+
+.map .section-ttl small {
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.map .section-ttl::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 40px;
+  background-color: #00621b;
+  transform: translate(-20px, 10px);
+}
+
+.map .map-inner {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.map .map-inner .map-img {
+  width: 65%;
+  height: 300px;
+}
+
+.map .map-inner .map-description {
+  width: 35%;
+}
+
+.map .map-description p {
+  padding: 20px 0 20px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 900px) {
+  .company ul li p.list-ttl {
+    width: 250px;
+    font-size: 20px;
+  }
+
+  .company ul li p.list-content {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .company {
+    margin: 50px auto;
+  }
+
+  .company ul li {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .company ul li p.list-ttl {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  .company ul li p.list-content {
+    font-size: 14px;
+  }
+
+  .map {
+    margin: 100px auto;
+  }
+
+  .map .section-ttl {
+    font-size: 20px;
+    padding: 0 0 20px 10px;
+    position: relative;
+  }
+
+  .map .section-ttl small {
+    font-size: 12px;
+  }
+
+  .map .section-ttl::before {
+    height: 30px;
+    width: 4px;
+    left: 20px;
+    top: -5px;
+    position: absolute;
+  }
+
+  .map .map-inner {
+    display: block;
+  }
+  .map .map-inner .map-img {
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+  }
+
+  .map .map-inner .map-description {
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .map .map-description p {
+    font-size: 13px;
+    padding: 5px 0;
+  }
+}

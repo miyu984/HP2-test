@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>株式会社Clear Door</title>
+  <meta name="description" content="株式会社Clear Doorのホームページです。">
+  <meta name="keywords" content="大学生,広島,中四国">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="株式会社Clear Doorのホームページです。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="">
+  <meta property="og:img" content="../img/home.png">
+  <meta property="og:description" content="株式会社Clear Doorのホームページです。">
+  <meta property="og:site_name" content="">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" sizes="180×180" href="../img/home.png">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../css/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d30b13e8ca.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-all">
+        <div class="nav-logo">
+          <p>Clear Door</p>
+        </div>
+        <ul class="nav-list">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../html/vision.html">VISION</a></li>
+          <li><a href="../html/service.html">SERVICE</a></li>
+          <li><a href="../html/company.html">COMPANY</a></li>
+          <li><a href="../html/contact.html" class="color">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p class="drawer"></p>
+  </header>
+
+  <section class="page-ttl">
+    <h1><small>CONTACT</small><br>お問い合わせ</h1>
+  </section>
+
+  <section class="top">
+    <img src="../img/home.png" alt="">
+    <div class="top-txt">
+      <p>お問い合わせは以下フォームからご連絡をお願いいたします。<br>通常2〜3営業日以内に担当よりご連絡を差し上げますが、<br>お問い合わせ内容によってはご連絡できかねることもございます。<br>あらかじめご了承ください。</p>
+    </div>
+  </section>
+
+  <section class="form">
+    <h2 class="section-ttl">お問い合わせフォーム</h2>
+    <form action="../mail.php" method="POST">
+      <div>
+        <label for="name">お問い合わせ項目</label>
+        <select name="" id="" name="subject" required="required">
+          <optgroup>
+            <option value="" hidden>お問い合わせ内容を選択</option>
+            <option value="参加希望">事業への参加希望</option>
+            <option value="お仕事のご依頼">お仕事のご依頼</option>
+            <option value="その他">その他</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <label for="name">お名前（漢字）</label>
+        <input type="text" required="required">
+      </div>
+      <div>
+        <label for="name">学校名/会社名</label>
+        <input type="text" required="required">
+      </div>
+      <div>
+        <label for="email">メールアドレス</label>
+        <input type="email" required="required">
+      </div>
+      <div>
+        <label for="tel">電話番号</label>
+        <input type="tel" required="required">
+      </div>
+      <div>
+        <label for="message">お問い合わせ内容</label>
+        <textarea name="message" id="" cols="30" rows="10" required="required">お問い合わせ内容をご入力下さい</textarea> 
+      </div>
+      <button type="submit" class="contact_btn">送信する</button>
+    </form>
+  </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</body>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">
+      <p class="footer-logo">Clear Door</p>
+      <p class="tel">TEL 080-2914-2501</p>
+      <p class="mail">MAIL info@cleardoor1204.com</p>
+      <div class="footer-icon">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-right">
+      <ul class="footer-right1">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../html/vision.html">VISION</a></li>
+        <li><a href="../html/service.html">SERVICE</a></li>
+      </ul>
+      <ul>
+        <li><a href="../html/company.html">COMPANY</a></li>
+        <li><a href="../html/contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copyright">@Clear Door. All Right Rezerved.</p>
+</footer>
+
+</html>

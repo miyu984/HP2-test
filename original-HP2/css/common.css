@@ -1,0 +1,385 @@
+@charset "UTF-8";
+
+* {
+  font-family: "Shippori Mincho", serif;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.8;
+  word-break: break-all;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-all {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+}
+
+.nav-logo {
+  position: absolute;
+  padding: 15px 0 0 50px;
+}
+
+.nav-logo p {
+  font-size: 35px;
+  font-weight: 800;
+  color: #003c11;
+}
+
+.nav-list {
+  display: flex;
+  float: right;
+  padding: 30px 50px 0 0;
+}
+
+.nav-list li a {
+  font-size: 20px;
+  padding-left: 20px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.nav-list li a.color {
+  color: #00621b;
+}
+
+footer {
+  background-color: #003c11;
+  color: white;
+}
+
+.footer-icon i {
+  color: white;
+  font-size: 50px;
+}
+
+.footer-right ul li a {
+  color: white;
+}
+
+.footer-inner {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.footer-inner .footer-left .footer-logo {
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+
+.footer-inner .footer-left .tel,
+.footer-inner .footer-left .mail {
+  padding: 0 0 5px 50px;
+  letter-spacing: 0.1em;
+}
+
+.footer-inner .footer-left {
+  width: 60%;
+}
+
+.footer-inner .footer-left .footer-icon {
+  padding: 50px 0 50px 50px;
+}
+
+.footer-inner .footer-left .footer-icon a {
+  padding-right: 30px;
+}
+
+.footer-inner .footer-right {
+  display: flex;
+  justify-content: flex-end;
+  margin: 150px 0 0;
+  width: 40%;
+}
+
+.footer-inner .footer-right .footer-right1 {
+  padding-right: 75px;
+}
+
+.footer-inner .footer-right ul {
+  padding-right: 50px;
+  position: relative;
+}
+
+.footer-inner .footer-right ul::before {
+  content: "";
+  position: absolute;
+  height: 180px;
+  width: 1px;
+  background-color: white;
+  top: 0;
+  left: -30px;
+}
+
+.footer-inner .footer-right ul li {
+  margin-bottom: 10px;
+}
+
+.copyright {
+  text-align: center;
+  padding: 50px 0 20px;
+  font-size: 12px;
+}
+
+.page-ttl {
+  background: #003c11;
+  color: white;
+  padding: 30px 0 50px 50px;
+}
+
+.page-ttl h1 {
+  font-size: 36px;
+}
+
+.page-ttl h1 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 900px) {
+  .nav-all {
+    height: 85px;
+  }
+
+  .nav-logo {
+    padding-left: 30px;
+  }
+
+  .nav-logo p {
+    font-size: 26px;
+    padding-left: 0;
+  }
+
+  .nav-list {
+    padding-right: 30px;
+    padding-top: 25px;
+  }
+
+  .nav-list li a {
+    font-size: 18px;
+    letter-spacing: normal;
+  }
+
+  .footer-inner {
+    width: 80%;
+    position: relative;
+  }
+
+  .footer-inner .footer-left .tel,
+  .footer-inner .footer-left .mail {
+    padding-left: 20px;
+  }
+
+  .footer-inner .footer-left .footer-icon {
+    padding-left: 20px;
+  }
+
+  .footer-inner .footer-right {
+    display: block;
+    padding-left: 25%;
+  }
+
+  .footer-inner .footer-right::before {
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 1px;
+    background-color: white;
+    top: 230px;
+    left: 60%;
+  }
+
+  .footer-inner .footer-right ul::before {
+    content: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  header .drawer {
+    visibility: visible;
+    width: 24px;
+    right: 10px;
+    top: 13px;
+    position: absolute;
+    border-top: solid 4px #003c11;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  header .drawer::before,
+  header .drawer::after {
+    content: "";
+    display: block;
+    width: 24px;
+    background: #003c11;
+    height: 4px;
+    position: absolute;
+    right: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  header .drawer::before {
+    top: 5.5px;
+  }
+
+  header .drawer::after {
+    top: 15px;
+  }
+
+  body.nav-open header .drawer {
+    border-top: 0;
+  }
+
+  body.nav-open header .drawer::before {
+    top: 9px;
+    transform: rotate(-45deg);
+  }
+
+  body.nav-open header .drawer::after {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+
+  .nav-list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: white;
+    text-align: center;
+    padding: 200px 0;
+  }
+
+  .nav-list li {
+    padding-bottom: 40px;
+  }
+
+  .nav-logo p {
+    font-size: 20px;
+  }
+
+  .nav-logo {
+    padding: 5px 0 0 10px;
+  }
+
+  .nav-all {
+    height: 50px;
+  }
+
+  .footer-inner {
+    display: block;
+    padding: 200px 0 0;
+    position: relative;
+  }
+
+  .footer-inner .footer-left {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-inner .footer-left .footer-logo {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .footer-inner .footer-left .tel,
+  .footer-inner .footer-left .mail {
+    font-size: 12px;
+    padding-left: 0;
+  }
+
+  .footer-inner .footer-left .footer-icon {
+    padding: 10px 0 0;
+  }
+
+  .footer-icon i {
+    font-size: 30px;
+  }
+
+  .footer-inner .footer-left .footer-icon a {
+    padding: 0 20px;
+  }
+
+  .footer-inner .footer-right::before {
+    content: none;
+  }
+
+  .footer-inner .footer-right {
+    margin: 0;
+    padding-left: unset;
+    width: 70%;
+    padding-top: 30px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-inner .footer-right ul {
+    padding-right: 0;
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .footer-inner .footer-right ul::before {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 1px;
+    background-color: white;
+    top: 0;
+    left: -30px;
+  }
+
+  .footer-inner .footer-right ul.footer-right1::before {
+    content: none;
+  }
+
+  .footer-inner .footer-right .footer-right1 {
+    padding: 0;
+    width: 100%;
+  }
+
+  .footer-right ul li a {
+    font-size: 14px;
+  }
+
+  .copyright {
+    padding: 20px 0;
+    font-size: 10px;
+  }
+
+  .page-ttl {
+    padding: 10px 20px 20px;
+  }
+
+  .page-ttl h1 {
+    font-size: 20px;
+  }
+
+  .page-ttl h1 small {
+    font-size: 10px;
+  }
+}
